@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones basicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+            background-color: rgba(52, 215, 236, 0.829);
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 20%;
+            box-sizing: border-box;
+            background-color: rgb(226, 141, 183);
+        }
+    </style>
+    <script>
+ function suma() {
+            let a,b,c;
+        a=4;
+        b=5;
+            c= a + b;
+        document.getElementById('a').innerHTML=a;
+        document.getElementById('b').innerHTML=b;
+        document.getElementById('total').innerHTML=c;
+        }
+
+        function resta() {
+            let a,b,c;
+        a=4;
+        b=5;
+            c = a - b;
+        document.getElementById('a').innerHTML=a;
+        document.getElementById('b').innerHTML=b;
+        document.getElementById('total').innerHTML=c;
+        }
+        function multiplicar() {
+            let a,b,c;
+        a=4;
+        b=5;
+            c = a * b;
+        document.getElementById('a').innerHTML=a;
+        document.getElementById('b').innerHTML=b;
+        document.getElementById('total').innerHTML=c;
+        }
+        function dividir() {
+            let a,b,c;
+        a=4;
+        b=5;
+            if (b === 0) {
+                return 'Error: División por cero';
+            }
+            c = a / b;
+        document.getElementById('a').innerHTML=a;
+        document.getElementById('b').innerHTML=b;
+        document.getElementById('total').innerHTML=c;
+        }
+    </script>
+</head>
+<body>
+    <H1>Operaciones Basicas</H1>
+    
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="total"></p>
+    <button type="button" onclick="suma()">Suma</button>
+    <button type="button" onclick="resta()">Resta</button>
+    <button type="button" onclick="multiplicar()">Multiplicar</button>
+    <button type="button" onclick="dividir()">Dividir</button>
+    <h2 id="result"></h2>
+</body>
+</html>
